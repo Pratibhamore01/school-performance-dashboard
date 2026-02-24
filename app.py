@@ -72,7 +72,7 @@ if dept_selected != "All":
 # --------------------------------------------------
 if page == "Dashboard":
 
-    st.title("📊 Overall Performance Dashboard")
+    st.title("📊 School Performance Dashboard")
 
     col1, col2, col3, col4 = st.columns(4)
 
@@ -186,3 +186,4 @@ elif page == "Late Count & Attrition":
     else:
 
         st.dataframe(attrition_df)
+
