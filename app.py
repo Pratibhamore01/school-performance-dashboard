@@ -10,9 +10,9 @@ st.set_page_config(page_title="School Analytics Dashboard", layout="wide")
 # --------------------------------------------------
 # LOAD DATA
 # --------------------------------------------------
-teachers = pd.read_csv("data/teachers.csv")
-performance = pd.read_csv("data/performance.csv")
-attendance = pd.read_csv("data/attendance.csv")
+teachers = pd.read_csv("teachers.csv")
+performance = pd.read_csv("performance.csv")
+attendance = pd.read_csv("attendance.csv")
 
 # --------------------------------------------------
 # DATA MODELING (JOINS)
@@ -184,4 +184,5 @@ elif page == "Late Count & Attrition":
     if attrition_df.empty:
         st.success("No Attrition Cases Found 🎉")
     else:
+
         st.dataframe(attrition_df)
